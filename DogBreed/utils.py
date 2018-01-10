@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import cv2
 from sklearn.model_selection import train_test_split
+from keras.preprocessing.image import ImageDataGenerator
 
 
 def read_all_training_file(train_folder, label_file, image_size=90):
@@ -33,3 +34,15 @@ def split_train_valid(data, test_percentage=0.1):
     X_train, X_valid, Y_train, Y_valid = train_test_split(
         data[0], data[1], test_size=test_percentage, random_state=1)
     return (X_train, X_valid, Y_train, Y_valid)
+
+
+def augment_image_generator():
+    datagen = ImageDataGenerator(
+        rotation_range=40,
+        width_shift_range=0.2,
+        height_shift_range=0.2,
+        shear_range=0.2,
+        zoom_range=0.2,
+        horizontal_flip=True,
+        fill_mode='nearest')
+    return datagen
