@@ -22,6 +22,7 @@ def read_all_training_file(train_folder, label_file, image_size=90):
         X_train.append(img)
         Y_train.append(labels_one_hot[ind])
         ind += 1
+        #if ind>=100: break
     X_train_norm = np.array(X_train, np.float32) / 255
     Y_train = np.array(Y_train, np.float32)
 
