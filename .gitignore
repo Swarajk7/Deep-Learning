@@ -1,0 +1,8 @@
+*/.ipynb*/*
+*.csv
+*.7z
+*/train/*
+*/test/*
+*/__pycache__/*
+*/input/*
+*/.vscode/*
