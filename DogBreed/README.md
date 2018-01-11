@@ -8,5 +8,5 @@
 Download data from https://www.kaggle.com/c/dog-breed-identification/data and put in format as specified below
 
 - Directory: \Deep-Learning\DogBreed\input
-- .\input\train\{}.jpg
+- .\input\train\id.jpg
 - .\input\labels.csv
