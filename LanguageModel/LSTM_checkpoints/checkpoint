@@ -1,0 +1,6 @@
+model_checkpoint_path: "LSTM_2_epoch_55.ckpt"
+all_model_checkpoint_paths: "LSTM_2_epoch_35.ckpt"
+all_model_checkpoint_paths: "LSTM_2_epoch_40.ckpt"
+all_model_checkpoint_paths: "LSTM_2_epoch_45.ckpt"
+all_model_checkpoint_paths: "LSTM_2_epoch_50.ckpt"
+all_model_checkpoint_paths: "LSTM_2_epoch_55.ckpt"
